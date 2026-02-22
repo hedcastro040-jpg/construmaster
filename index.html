@@ -12,7 +12,6 @@
 
 
   
-  <a href="#contactForm" class="btn-presupuesto">Solicitar presupuesto rápido</a>
     <style>
         /* --- Variables y Reset --- */
         :root {
@@ -793,21 +792,21 @@
             });
 
             // --- Manejo del Formulario (Simulación) ---
-            //const form = document.getElementById('contactForm');
+            const form = document.getElementById('contactForm');
             
             form.addEventListener('submit', function(e) {
-                // e.preventDefault();
+                
                 
                 const nombre = document.getElementById('nombre').value;
                 const servicio = document.getElementById('servicio').value;
-                
+                 <form id="contactForm" action="https://formsubmit.co/hedcastro266@gmail.com" method="POST">
                 // Simulación de envío
-                //alert(`¡Gracias ${nombre}! Hemos recibido tu solicitud para ${servicio}. Nos pondremos en contacto contigo pronto.`);
+                alert(`¡Gracias ${nombre}! Hemos recibido tu solicitud para ${servicio}. Nos pondremos en contacto contigo pronto.`);
                 
-                // Resetear formulario
-               // form.reset();
-           // });
-            <form id="contactForm" action="https://formsubmit.co/hedcastro266@gmail.com" method="POST">
+                 Resetear formulario
+                form.reset();
+            });
+           
             // --- Efecto de aparición al hacer scroll (Intersection Observer) ---
             const observerOptions = {
                 threshold: 0.1
@@ -836,6 +835,7 @@
 </body>
 
 </html>
+
 
 
 
