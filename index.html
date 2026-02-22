@@ -795,11 +795,11 @@
             // --- Manejo del Formulario (Simulación) ---
             //const form = document.getElementById('contactForm');
             
-            //form.addEventListener('submit', function(e) {
-              //  e.preventDefault();//
+            form.addEventListener('submit', function(e) {
+                // e.preventDefault();
                 
-               // const nombre = document.getElementById('nombre').value;
-                //const servicio = document.getElementById('servicio').value;
+                const nombre = document.getElementById('nombre').value;
+                const servicio = document.getElementById('servicio').value;
                 
                 // Simulación de envío
                 //alert(`¡Gracias ${nombre}! Hemos recibido tu solicitud para ${servicio}. Nos pondremos en contacto contigo pronto.`);
@@ -836,6 +836,7 @@
 </body>
 
 </html>
+
 
 
 
