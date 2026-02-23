@@ -525,13 +525,14 @@
             <p>SOMOS TU MEJOR ELECCION</p>
               <!-- BOTÓN MENÚ MÓVIL -->
          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            
               <nav class="menu">
-    <li><a href="#inicio">Inicio</a>
-    <li><a href="#servicios">Servicios</a>
-    <li><a href="#contacto">Contacto</a>
-                  <li><a href="#nosotros">Nosotros</a>
-                  <li><a href="#galeria">Proyectos</a>
-  </nav>
+                 <li><a href="#inicio">Inicio</a>
+                 <li><a href="#servicios">Servicios</a>
+                 <li><a href="#contacto">Contacto</a>
+                 <li><a href="#nosotros">Nosotros</a>
+                 <li><a href="#galeria">Proyectos</a>
+              </nav>
             
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -884,8 +885,9 @@
                 observer.observe(card);
             });
             function toggleMenu() {
-            const menu = document.querySelector(".menu");
-            menu.classList.toggle("active");
+                document.querySelector(".menu")
+                 .classList.toggle("active");
+            }
             
             });
         });
@@ -893,6 +895,7 @@
 </body>
 
 </html>
+
 
 
 
