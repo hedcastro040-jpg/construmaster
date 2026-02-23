@@ -491,6 +491,9 @@
             }
             
             /* --- Menu --- */
+            .menu-toggle {
+             display: none; 
+            }  
        @media (max-width: 768px) {
         .menu {
             display: none;
@@ -527,17 +530,14 @@
          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             
               <nav class="menu">
-                 <li><a href="#inicio">Inicio</a>
-                 <li><a href="#servicios">Servicios</a>
-                 <li><a href="#contacto">Contacto</a>
-                 <li><a href="#nosotros">Nosotros</a>
-                 <li><a href="#galeria">Proyectos</a>
+                 <a href="#inicio">Inicio</a>
+                 <a href="#servicios">Servicios</a>
+                 <a href="#contacto">Contacto</a>
+                 <a href="#nosotros">Nosotros</a>
+                 <a href="#galeria">Proyectos</a>
               </nav>
             
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+         
     </header>
     <!-- Hero Section -->
     <section id="inicio">
@@ -885,8 +885,9 @@
                 observer.observe(card);
             });
             function toggleMenu() {
-                document.querySelector(".menu")
-                 .classList.toggle("active");
+                const menu =
+                    document.querySelector(".menu");
+                 menu.classList.toggle("active");
             }
             
             });
@@ -895,6 +896,7 @@
 </body>
 
 </html>
+
 
 
 
