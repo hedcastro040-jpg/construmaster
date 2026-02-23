@@ -798,7 +798,11 @@
     <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            
+          
+            function toggleMenu() {
+                const menu = document.querySelector(".menu");
+                    menu.classList.toggle("active");
+                }
             // --- Menú Hamburguesa Móvil ---
             const hamburger = document.querySelector('.hamburger');
             const navLinks = document.querySelector('.nav-links');
@@ -895,6 +899,7 @@
 </body>
 
 </html>
+
 
 
 
