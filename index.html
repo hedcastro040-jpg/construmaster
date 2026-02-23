@@ -522,7 +522,15 @@
             <a href="index.html">
          <img src="cmcas.jpg" alt="" style="height:100px;"></a>
             <p>SOMOS TU MEJOR ELECCION</p>
-            
+              <!-- BOTÓN MENÚ MÓVIL -->
+         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+              <nav class="menu">
+    <li><a href="#inicio">Inicio</a>
+    <li><a href="#servicios">Servicios</a>
+    <li><a href="#contacto">Contacto</a>
+                  <li><a href="#nosotros">Nosotros</a>
+                  <li><a href="#galeria">Proyectos</a>
+  </nav>
    
             <nav>
                 <ul class="nav-links">
@@ -886,13 +894,14 @@
             function toggleMenu() {
             const menu = document.querySelector(".menu");
             menu.classList.toggle("active");
-            }
+            
             });
         });
     </script>
 </body>
 
 </html>
+
 
 
 
