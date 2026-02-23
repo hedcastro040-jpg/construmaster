@@ -799,10 +799,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
           
-            function toggleMenu() {
-                const menu = document.querySelector(".menu");
-                    menu.classList.toggle("active");
-                }
+            
             // --- Menú Hamburguesa Móvil ---
             const hamburger = document.querySelector('.hamburger');
             const navLinks = document.querySelector('.nav-links');
@@ -894,11 +891,16 @@
                 card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
                 observer.observe(card);
             });
+            function toggleMenu() {
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("active");
+}
         });
     </script>
 </body>
 
 </html>
+
 
 
 
